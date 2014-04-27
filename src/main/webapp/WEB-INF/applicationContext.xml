@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+       default-init-method="inicio">
+
+    <bean id="tServlet" class="com.borabora.skeletons.web.iocspringxml.IOCTestHandler">
+        <property name="iocTest" ref="t" />
+    </bean>
+    <bean id="t" class="com.borabora.skeletons.web.iocspringxml.IOCTest">
+        <property name="name" value="con IOC" />
+    </bean>
+</beans>
